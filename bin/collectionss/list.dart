@@ -27,8 +27,7 @@ void main() {
   // 7.List.unmodifiable
   List l7 = List.unmodifiable(l3);
   //we cannot modify this list.cuz its a unmodifiable list.we cannot add or change any values
-
-  print("literal list : $mylist");
+  print("literal list = $mylist");
   print("literal list 2 : $names");
   print("l1 = $l1");
   print("l2 = $l2");

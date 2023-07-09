@@ -11,10 +11,10 @@ void main(){
 
   }
 print('''what do you want to do to your list?
-         1 : add
-         2 : remove
-         3 : print''');
-  dynamic choice = int.parse(stdin.readLineSync()!);
+         1 : element add to your list
+         2 : remove element from your list
+         3 : print your list ''');
+  int choice = int.parse(stdin.readLineSync()!);
 switch(choice){
   case 1 :
     print("enter the element to add:");
