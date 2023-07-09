@@ -21,12 +21,12 @@ void main(){
   "email" : "arq987@gmail.com",
   }
   ];
- print("search your id");
- int id = int.parse(stdin.readLineSync()!);
+ print("search your id or name");
+ var id = stdin.readLineSync();
 
 bool found = false;
 for(var detail in details ){
-  if(detail["id"] == id){
+  if(detail["id"] == id || detail["name"] == id){
     print(detail);
     found = true;
     break;
