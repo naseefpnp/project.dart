@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void main(){
+
   List<Map<String,dynamic>> details = [
   {
     "id" : 1,
@@ -21,12 +22,12 @@ void main(){
   "email" : "arq987@gmail.com",
   }
   ];
- print("search your id or name");
- var id = stdin.readLineSync();
+ print("name or id");
+ dynamic choice = int.parse(stdin.readLineSync()!);
 
 bool found = false;
 for(var detail in details ){
-  if(detail["id"] == id || detail["name"] == id){
+  if(detail["id"] == choice|| detail["name"] == choice){
     print(detail);
     found = true;
     break;
