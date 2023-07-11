@@ -4,7 +4,7 @@ void main(){
   Map<String,int> mark = {"naseef" : 123,"luffy" : 345,"ace" : 234};
   print("map = $map");
   print("mark = $mark");
-  print("mark of anu = ${mark["naseef"]}");  // to access particular value mapname[key]
+  print("mark of naseef = ${mark["naseef"]}");  // to access particular value mapname[key]
   //map() same as literal way
 
   Map m2 = {};
@@ -39,3 +39,6 @@ print ("map 6 = $map6");
   });
 
 }
+
+
+

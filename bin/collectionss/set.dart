@@ -24,7 +24,7 @@ print('s6 = $s6');
 print('s7 = $s7');
 
 s3.forEach((element) {
-  stdout.write(element);
+  print(element);
 
 });
 for(int i = 0;i < s3.length;i++){
@@ -34,4 +34,7 @@ print("s1 = ${s1.union(s3)}");   //all element
 print(s1.intersection(s3));
 print(s1.difference(s3));
 
+s1.forEach((element) {
+  print(element);
+});
 }

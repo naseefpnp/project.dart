@@ -22,19 +22,19 @@ void main(){
   "email" : "arq987@gmail.com",
   }
   ];
- print("name or id");
- dynamic choice = int.parse(stdin.readLineSync()!);
+ print("search for your id");
+ int choice = int.parse(stdin.readLineSync()!);
 
 bool found = false;
 for(var detail in details ){
-  if(detail["id"] == choice|| detail["name"] == choice){
+  if(detail["id"] == choice){
     print(detail);
     found = true;
     break;
 
   }
 }
-if(!found){
+if(found == false){
   print("cannot find your id in our database");
 }
 
